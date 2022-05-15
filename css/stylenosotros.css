@@ -1,0 +1,322 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #061186;
+    --secundario: #061186;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+header {
+    font-size: 3rem;
+    width: 100%;
+    height: 300px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(232, 95%, 50%, 0.634), hsla(234, 45%, 52%, 0.668)), url("../img/oceano.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(238, 33%, 19%, 0.401), hsla(235, 45%, 52%, 0.668)), url("../img/oceano.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    
+    background-attachment: fixed;
+    position: relative;
+}
+body {
+    font-size: 16px;/* 1 rem = 10px*/
+    font-family: 'Krub', sans-serif;
+    justify-content: center;
+    
+    text-align: center;
+    
+    
+    
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    color: var(--blanco);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+ h2{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-bottom: 5rem;
+    color: var(--primario);
+    font-size: 3rem;
+ }
+ h3{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    
+ }
+ p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    
+ }
+.contenido{
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    justify-content: center;
+    background-image: url("../img/tocean - solodel.ico");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-sobre-nosotros{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.cards .card{
+    background: #2e6fd296;
+    margin: 30px;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(136, 96, 57, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .cont-text-card{
+    width: 60%;
+    color: white;
+}
+.titulo {
+    margin-top: 100px;
+    color: #2a2a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+.cards .card > .cont-text-card p{
+   font-weight: 300;
+   padding-top: 5px; 
+}
+
+
+footer{
+    text-align: right;
+}
+
+
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .contenedor-sobre-nosotros .imagen-about-us {
+        height: 20px;
+        width: 20px;
+    }
+    
+
+    /*-----------GALERIA----------------*/
+    
+    .img-port{
+        width: 44%;
+    }
+
+    /*-------------CLIENTES--------------*/
+    
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+    
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /*----------------SERVICIO------------*/
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+
+}
+
+footer{
+    background: #2e6fd296;
+    padding: 10px 0 0px 0;
+    
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color:black;
+    border-bottom: 3px solid #2038d3;
+    padding-bottom: 5px;
+    margin-bottom: 5px; 
+}
+
+.content-foo p{
+    color: black;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #061186;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a {
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /*---------------SOBRE NOSOTROS-----------*/
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /*-------------------GALERIA---------------*/
+        .img-port{
+            width: 95%;
+        }
+
+    
+        /*-------------------CLIENTES---------------*/
+        
+        .cards .card{
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }   
+
+        .cards .card img{
+            width: 90px;
+            height: 90px;
+        }
+
+
+        /*-------------------FOOTER-----------------*/
+        
+        .contenedor-footer{
+            flex-direction: column;
+            border: none;
+        }
+
+        .content-foo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-foo h4{
+            border: none;
+        }
+        
+        .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom:20px ;
+        }
+
+        .titulo-final{
+            font-size: 20px;
+        }
+}
+
+.textres {
+    text-align: left;
+}

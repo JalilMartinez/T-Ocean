@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    font-size: 3rem;
+    width: 100%;
+    height: 300px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(232, 95%, 50%, 0.634), hsla(234, 45%, 52%, 0.668)), url("../img/oceano.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(238, 33%, 19%, 0.401), hsla(235, 45%, 52%, 0.668)), url("../img/oceano.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    
+    background-attachment: fixed;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    padding-top: 50px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*-----------------------------GALERIA---------------------------*/
+.Portafolio{
+    background: #f2f2f2;
+}
+
+.noticia-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-port{
+    width: 45%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.img-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-noticia{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    padding-left: 5%;
+    transform: scale(0);
+    background: #2e6fd296;
+    transition: transform .5s;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+}
+
+.hover-noticia img{
+    width: 50px;
+}
+
+.hover-noticia a{
+    color: white;
+    text-decoration: none;
+}
+
+.img-port:hover .hover-noticia{
+    transform: scale(1);
+}
+
+footer{
+    background: #2e6fd296;
+    padding: 10px 0 40px 0;
+    
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color:black;
+    border-bottom: 3px solid #2038d3;
+    padding-bottom: 5px;
+    margin-bottom: 5px; 
+}
+
+.content-foo p{
+    color: black;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #061186;
+}
