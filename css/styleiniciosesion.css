@@ -17,7 +17,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+h1{
+    color: var(--blanco);
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+}
 .form{
     background-color: #fff;
     margin: auto;
