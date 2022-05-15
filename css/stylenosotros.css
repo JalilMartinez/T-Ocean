@@ -17,6 +17,36 @@ html{
     font-size: 62.5%;
     
 }
+nav{
+    text-align: right;
+   padding: 30px 50px 0 0;
+   font-size:  1.7rem;
+}
+.boton{
+    background-color:#2e8ed2;
+    color: white;
+    padding: .2rem .5rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+nav > a{
+    color: white;
+    font-weight: 50;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
 header {
     font-size: 3rem;
     width: 100%;
